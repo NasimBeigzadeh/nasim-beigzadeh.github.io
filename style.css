@@ -716,11 +716,24 @@ main {
 
 .publication-meta a {
 
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
     font-size: 12px;
 
     font-weight: 600;
 
     color: var(--primary);
+}
+
+
+.publication-meta a i {
+
+    font-size: 12px;
+
 }
 
 
