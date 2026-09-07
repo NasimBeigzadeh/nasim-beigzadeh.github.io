@@ -1,1433 +1,235 @@
 /* =========================================
-   NASIM BEIGZADEH — ACADEMIC WEBSITE
+   FINAL TYPOGRAPHY OVERRIDE
+   Keep existing design/layout unchanged
 ========================================= */
 
 
-/* =========================================
-   ROOT
-========================================= */
-
-:root {
-
-    --background: #f3f6f4;
-    --background-soft: #eef3f1;
-
-    --card: #ffffff;
-
-    --primary: #244f50;
-    --primary-light: #e5eeee;
-
-    --accent: #5f8582;
-
-    --text: #243234;
-    --text-soft: #647274;
-
-    --border: #dce5e3;
-
-    --white: #ffffff;
-
-    --shadow:
-        0 12px 35px rgba(38, 65, 66, 0.07);
-
-    --shadow-hover:
-        0 18px 45px rgba(38, 65, 66, 0.11);
-
-    --radius: 18px;
-}
-
-
-/* =========================================
-   RESET
-========================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+/* ---------- Main body text ---------- */
 
 body {
-
     font-family: "Inter",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
         sans-serif;
 
-    background:
-        linear-gradient(
-            135deg,
-            #f5f8f6 0%,
-            #eef4f2 48%,
-            #f4f6f3 100%
-        );
-
-    color: var(--text);
-
-    line-height: 1.7;
-
-    font-size: 15px;
-
-    min-height: 100vh;
+    color: #000000;
 }
 
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-.container {
-
-    width: min(1180px, 92%);
-
-    margin: 0 auto;
-}
-
-
-/* =========================================
-   HERO
-========================================= */
-
-.hero {
-
-    padding: 70px 0 65px;
-
-    background:
-        radial-gradient(
-            circle at 10% 10%,
-            rgba(123, 161, 157, 0.12),
-            transparent 32%
-        ),
-        linear-gradient(
-            135deg,
-            #edf4f1,
-            #f7f8f5
-        );
-
-    border-bottom:
-        1px solid rgba(90, 120, 119, 0.10);
-}
-
-
-.hero-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        360px 1fr;
-
-    gap: 80px;
-
-    align-items: center;
-}
-
-
-/* =========================================
-   PROFILE COLUMN
-========================================= */
-
-.profile-column {
-
-    padding-right: 35px;
-
-    border-right:
-        1px solid var(--border);
-}
-
-
-.profile-image {
-
-    margin-bottom: 22px;
-}
-
-
-.photo-placeholder {
-
-    width: 145px;
-    height: 145px;
-
-    border-radius: 50%;
-
-    background:
-        linear-gradient(
-            145deg,
-            #dce9e6,
-            #edf3f0
-        );
-
-    border:
-        5px solid rgba(255,255,255,0.85);
-
-    box-shadow:
-        0 12px 30px rgba(42, 72, 72, 0.12);
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    color: #73918e;
-
-    font-size: 45px;
-}
-
-
-.profile-column h1 {
-
-    font-size: 38px;
-
-    line-height: 1.15;
-
-    letter-spacing: -1.3px;
-
-    font-weight: 700;
-
-    color: #203d3e;
-
-    margin-bottom: 10px;
-}
-
-
-.degree {
-
-    color: var(--primary);
-
-    font-size: 16px;
-
-    font-weight: 600;
-
-    margin-bottom: 3px;
-}
-
-
-.university {
-
-    color: var(--text-soft);
-
-    font-size: 14px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-}
-
-
-.university i {
-    color: var(--accent);
-}
-
-
-/* =========================================
-   SOCIAL ICONS
-========================================= */
-
-.social-links {
-
-    display: flex;
-
-    gap: 10px;
-
-    margin-top: 24px;
-}
-
-
-.social-links a {
-
-    width: 39px;
-    height: 39px;
-
-    border-radius: 11px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: var(--white);
-
-    color: var(--primary);
-
-    border:
-        1px solid var(--border);
-
-    box-shadow:
-        0 5px 14px rgba(42, 72, 72, 0.05);
-
-    transition:
-        0.25s ease;
-}
-
-
-.social-links a:hover {
-
-    background: var(--primary);
-
-    color: white;
-
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        0 8px 20px rgba(36, 79, 80, 0.16);
-}
-
-
-.orcid-icon {
-
-    font-size: 13px;
-
-    font-weight: 700;
-
-    letter-spacing: -1px;
-
-    border:
-        1.5px solid currentColor;
-
-    width: 22px;
-    height: 22px;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-}
-
-
-.orcid-icon.small {
-
-    width: 18px;
-    height: 18px;
-
-    font-size: 10px;
-}
-
-
-/* =========================================
-   ABOUT
-========================================= */
-
-.about-column {
-
-    max-width: 700px;
-}
-
+/* ---------- Section labels ---------- */
 
 .section-label {
-
-    color: var(--accent);
-
+    color: #000000;
     font-size: 11px;
-
     font-weight: 700;
-
     letter-spacing: 2px;
-
-    margin-bottom: 10px;
 }
 
 
-.about-column h2 {
+/* ---------- Main headings ---------- */
 
-    font-size: 31px;
-
-    line-height: 1.25;
-
-    letter-spacing: -0.8px;
-
-    color: #244445;
-
-    margin-bottom: 22px;
+.about-column h2,
+.card h2,
+.contact-card h2 {
+    color: #000000;
+    font-weight: 700;
 }
 
 
-.about-column h2 span {
+/* ---------- About Me text ---------- */
 
-    color: var(--accent);
+.about-column p {
+    color: #000000;
+}
 
+.about-column strong {
+    color: #000000;
+    font-weight: 700;
+}
+
+
+/* ---------- Research Interests ---------- */
+
+.interest-item h3 {
+    color: #000000;
+    font-weight: 700;
+}
+
+.interest-item p {
+    color: #000000;
+}
+
+
+/* ---------- Technical Skills ---------- */
+
+.skills-group h3 {
+    color: #000000;
+    font-weight: 700;
+}
+
+.skill-tags span {
+    color: #000000;
     font-weight: 400;
 }
 
 
-.about-column p {
+/* ---------- Publications ---------- */
 
-    color: var(--text-soft);
-
-    margin-bottom: 14px;
-
-    max-width: 680px;
+.publication-content h3 {
+    color: #000000;
+    font-weight: 700;
 }
 
-
-.about-column strong {
-
-    color: #385a5a;
-
-    font-weight: 600;
+.authors {
+    color: #000000;
 }
 
-
-.about-footer {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 25px;
-
-    margin-top: 25px;
-
-    padding-top: 20px;
-
-    border-top:
-        1px solid var(--border);
-
-    color: var(--text-soft);
-
-    font-size: 13px;
+.authors strong {
+    color: #000000;
+    font-weight: 700;
 }
 
-
-.about-footer span,
-.about-footer a {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
+.journal {
+    color: #000000;
 }
 
-
-.about-footer i {
-
+.publication-year {
     color: var(--accent);
 }
 
 
-.about-footer a {
+/* ---------- Research Experience ---------- */
 
-    color: var(--primary);
+.timeline-content h3 {
+    color: #000000;
+    font-weight: 700;
+}
 
-    font-weight: 600;
+.institution {
+    color: #000000;
+}
 
-    transition: 0.2s ease;
+.timeline-content p {
+    color: #000000;
+}
+
+.timeline-date {
+    color: #000000;
+}
+
+.supervisor {
+    color: #000000;
 }
 
 
-.about-footer a:hover {
+/* ---------- Teaching & Academic Service ---------- */
+
+.service-column > h3 {
+    color: #000000;
+    font-weight: 700;
+}
+
+.service-item h4 {
+    color: #000000;
+    font-weight: 700;
+}
+
+.service-item p {
+    color: #000000;
+}
+
+.service-date {
+    color: #000000;
+}
+
+
+/* ---------- Education ---------- */
+
+.education-item h3 {
+    color: #000000;
+    font-weight: 700;
+}
+
+.education-item p {
+    color: #000000;
+}
+
+.education-item strong {
+    color: #000000;
+}
+
+.education-year {
+    color: var(--accent);
+}
+
+
+/* ---------- Contact ---------- */
+
+.contact-card h2 {
+    color: #000000;
+    font-weight: 700;
+}
+
+.contact-card p {
+    color: #000000;
+}
+
+
+/* ---------- Footer ---------- */
+
+.footer-content p {
+    color: #000000;
+}
+
+
+/* =========================================
+   KEEP LINKS COLORED
+========================================= */
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
     color: #193a3b;
 }
 
 
-/* =========================================
-   MAIN SECTIONS
-========================================= */
-
-main.container {
-
-    padding-top: 55px;
-}
-
-
-.two-column-section {
-
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap: 25px;
-
-    margin-bottom: 25px;
-}
-
-
-.card {
-
-    background: rgba(255,255,255,0.92);
-
-    border:
-        1px solid rgba(210, 224, 221, 0.85);
-
-    border-radius: var(--radius);
-
-    padding: 34px;
-
-    box-shadow: var(--shadow);
-
-    transition:
-        box-shadow 0.25s ease,
-        transform 0.25s ease;
-}
-
-
-.card:hover {
-
-    box-shadow: var(--shadow-hover);
-
-    transform: translateY(-2px);
-}
-
-
-.card h2 {
-
-    color: #284849;
-
-    font-size: 25px;
-
-    line-height: 1.3;
-
-    letter-spacing: -0.5px;
-
-    margin-bottom: 28px;
-}
-
-
-/* =========================================
-   RESEARCH INTERESTS
-========================================= */
-
-.interest-list {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 18px;
-}
-
-
-.interest-item {
-
-    display: grid;
-
-    grid-template-columns: 38px 1fr;
-
-    gap: 12px;
-
-    align-items: start;
-}
-
-
-.interest-number {
-
-    color: #75918f;
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    padding-top: 3px;
-}
-
-
-.interest-item h3 {
-
-    font-size: 15px;
-
-    color: #355354;
-
-    margin-bottom: 3px;
-
-    font-weight: 600;
-}
-
-
-.interest-item p {
-
-    color: var(--text-soft);
-
-    font-size: 13px;
-
-    line-height: 1.55;
-}
-
-
-/* =========================================
-   TECHNICAL SKILLS
-========================================= */
-
-.skills-group {
-
-    margin-bottom: 23px;
-}
-
-
-.skills-group:last-child {
-    margin-bottom: 0;
-}
-
-
-.skills-group h3 {
-
-    font-size: 13px;
-
-    color: #476261;
-
-    font-weight: 600;
-
-    margin-bottom: 9px;
-}
-
-
-.skill-tags {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 7px;
-}
-
-
-.skill-tags span {
-
-    padding: 6px 10px;
-
-    background: #edf3f1;
-
-    border:
-        1px solid #dce8e5;
-
-    border-radius: 8px;
-
-    color: #496362;
-
-    font-size: 12px;
-
-    font-weight: 500;
-}
-
-
-/* =========================================
-   PUBLICATIONS
-========================================= */
-
-.publication {
-
-    display: grid;
-
-    grid-template-columns: 72px 1fr;
-
-    gap: 18px;
-
-    padding: 22px 0;
-
-    border-top:
-        1px solid var(--border);
-}
-
-
-.publication:first-of-type {
-
-    border-top: none;
-
-    padding-top: 0;
-}
-
-
-.publication-year {
-
-    color: var(--accent);
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    line-height: 1.4;
-
-    padding-top: 3px;
-}
-
-
-.publication-content h3 {
-
-    color: #314f50;
-
-    font-size: 14px;
-
-    line-height: 1.6;
-
-    font-weight: 600;
-
-    margin-bottom: 7px;
-}
-
-
-.authors {
-
-    color: var(--text-soft);
-
-    font-size: 12px;
-
-    margin-bottom: 2px;
-}
-
-
-.authors strong {
-    color: #3d5d5d;
-}
-
-
-.journal {
-
-    color: #778786;
-
-    font-size: 12px;
-
-    font-style: italic;
-
-    margin-bottom: 8px;
-}
-
-
-.publication-meta {
-
-    display: flex;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    gap: 9px;
-}
-
-
-.publication-meta a {
-
-    color: var(--primary);
-
-    font-size: 11px;
-
-    font-weight: 600;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 5px;
-
-    transition: 0.2s ease;
-}
-
-
-.publication-meta a:hover {
-    color: #172f30;
-}
-
-
-.publication-meta i {
-    font-size: 9px;
-}
-
-
-.q1 {
-
-    background: #e5efec;
-
-    color: #52736f;
-
-    border-radius: 6px;
-
-    padding: 3px 7px;
-
-    font-size: 10px;
-
-    font-weight: 700;
-}
-
-
-.status {
-
-    background: #f0f2ef;
-
-    color: #78817f;
-
-    border-radius: 6px;
-
-    padding: 3px 7px;
-
-    font-size: 10px;
-
-    font-weight: 600;
-}
-
-
-/* =========================================
-   RESEARCH EXPERIENCE
-========================================= */
-
-.timeline {
-
-    position: relative;
-
-    padding-left: 24px;
-}
-
-
-.timeline::before {
-
-    content: "";
-
-    position: absolute;
-
-    left: 4px;
-
-    top: 6px;
-
-    bottom: 6px;
-
-    width: 1px;
-
-    background: #cfddda;
-}
-
-
-.timeline-item {
-
-    position: relative;
-
-    padding-bottom: 36px;
-}
-
-
-.timeline-item:last-child {
-    padding-bottom: 0;
-}
-
-
-.timeline-item::before {
-
-    content: "";
-
-    position: absolute;
-
-    left: -24px;
-
-    top: 6px;
-
-    width: 9px;
-    height: 9px;
-
-    background: #72908d;
-
-    border-radius: 50%;
-
-    border: 3px solid #edf4f1;
-
-    box-sizing: content-box;
-}
-
-
-.timeline-date {
-
-    color: var(--accent);
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    margin-bottom: 7px;
-}
-
-
-.timeline-content h3 {
-
-    color: #355354;
-
-    font-size: 16px;
-
-    margin-bottom: 5px;
-}
-
-
-.institution {
-
-    color: #687b79;
-
-    font-size: 12px;
-
-    font-weight: 600;
-
-    margin-bottom: 1px;
-}
-
-
-.timeline-content p {
-
-    color: var(--text-soft);
-
-    font-size: 13px;
-
-    margin-top: 10px;
-
-    line-height: 1.65;
-}
-
-
-.supervisor {
-
-    display: block;
-
-    color: #778786;
-
-    font-size: 11px;
-
-    margin-top: 9px;
-}
-
-
-/* =========================================
-   TEACHING + SERVICE
-========================================= */
-
-.service-section {
-
-    margin-bottom: 25px;
-}
-
-
-.wide-card {
-    width: 100%;
-}
-
-
-.service-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap: 45px;
-}
-
-
-.service-column {
-
-    position: relative;
-}
-
-
-.service-column > h3 {
-
-    font-size: 16px;
-
-    color: #385656;
-
-    margin-bottom: 22px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 9px;
-}
-
-
-.service-column > h3 i {
-    color: var(--accent);
-
-    font-size: 14px;
-}
-
-
-.service-item {
-
-    padding: 0 0 22px;
-
-    margin-bottom: 22px;
-
-    border-bottom:
-        1px solid var(--border);
-}
-
-
-.service-item:last-child {
-
-    border-bottom: none;
-
-    margin-bottom: 0;
-
-    padding-bottom: 0;
-}
-
-
-.service-date {
-
-    color: var(--accent);
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    letter-spacing: 0.4px;
-}
-
-
-.service-item h4 {
-
-    color: #3a5757;
-
-    font-size: 14px;
-
-    margin: 4px 0;
-}
-
-
-.service-item p {
-
-    color: var(--text-soft);
-
-    font-size: 12px;
-
-    line-height: 1.6;
-}
-
-
-.highlight-item {
-
-    display: flex;
-
-    gap: 17px;
-
-    align-items: flex-start;
-}
-
-
-.big-number {
-
-    color: #5f8582;
-
-    font-size: 31px;
-
-    font-weight: 700;
-
-    line-height: 1;
-
-    min-width: 55px;
-}
-
-
-.big-number sup {
-
-    font-size: 14px;
-}
-
-
-/* =========================================
-   EDUCATION
-========================================= */
-
-.education-section {
-
-    margin-bottom: 25px;
-}
-
-
-.education-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap: 45px;
-}
-
-
-.education-item {
-
-    padding-left: 20px;
-
-    border-left:
-        2px solid #d6e3e0;
-}
-
-
-.education-year {
-
-    color: var(--accent);
-
-    font-size: 11px;
-
-    font-weight: 700;
-}
-
-
-.education-item h3 {
-
-    color: #355354;
-
-    font-size: 17px;
-
-    margin: 6px 0;
-}
-
-
-.education-item p {
-
-    color: var(--text-soft);
-
-    font-size: 13px;
-
-    margin-top: 7px;
-}
-
-
-.education-item strong {
-    color: #466160;
-}
-
-
-/* =========================================
-   CONTACT
-========================================= */
-
-.contact-section {
-
-    margin-bottom: 55px;
-}
-
-
-.contact-card {
-
-    border-radius: var(--radius);
-
-    padding: 42px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #dfece8,
-            #edf3f0
-        );
-
-    border:
-        1px solid #d5e2df;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 40px;
-}
-
-
-.contact-card h2 {
-
-    font-size: 28px;
-
-    color: #284849;
-
-    margin-bottom: 8px;
-}
-
-
-.contact-card p {
-
-    color: #647573;
-
-    font-size: 13px;
-
-    max-width: 570px;
-}
-
-
-.contact-links {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
-
-    min-width: 245px;
-}
-
-
+/* Professor / Scholar / LinkedIn links */
+
+.supervisor a,
+.supervisor-line a,
+.publication-meta a,
+.about-footer a,
 .contact-links a {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 11px;
-
-    color: #456160;
-
-    font-size: 12px;
-
-    font-weight: 600;
-
-    transition: 0.2s ease;
+    color: var(--primary);
 }
 
 
-.contact-links a:hover {
-    color: #213c3d;
+/* =========================================
+   KEEP ICONS COLORED
+========================================= */
+
+.social-links a {
+    color: var(--primary);
 }
 
+.social-links a:hover {
+    color: #ffffff;
+}
+
+
+/* University icon */
+
+.university i,
+.about-footer i {
+    color: var(--accent);
+}
+
+
+/* Contact icons */
 
 .contact-links a > i {
-
-    width: 30px;
-    height: 30px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(255,255,255,0.72);
-
-    border-radius: 8px;
-
     color: var(--primary);
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-
-    border-top:
-        1px solid var(--border);
-
-    background: #edf2ef;
-
-    padding: 22px 0;
-}
-
-
-.footer-content {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-}
-
-
-.footer-content p {
-
-    color: #7a8886;
-
-    font-size: 11px;
-}
-
-
-/* =========================================
-   RESPONSIVE — TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-    .hero {
-        padding: 50px 0;
-    }
-
-
-    .hero-grid {
-
-        grid-template-columns:
-            1fr;
-
-        gap: 40px;
-    }
-
-
-    .profile-column {
-
-        padding-right: 0;
-
-        padding-bottom: 30px;
-
-        border-right: none;
-
-        border-bottom:
-            1px solid var(--border);
-    }
-
-
-    .profile-column h1 {
-        font-size: 34px;
-    }
-
-
-    .two-column-section {
-
-        grid-template-columns:
-            1fr;
-    }
-
-
-    .service-grid,
-    .education-grid {
-
-        grid-template-columns:
-            1fr;
-
-        gap: 35px;
-    }
-
-
-    .contact-card {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-}
-
-
-/* =========================================
-   RESPONSIVE — MOBILE
-========================================= */
-
-@media (max-width: 600px) {
-
-    body {
-        font-size: 14px;
-    }
-
-
-    .container {
-        width: min(92%, 500px);
-    }
-
-
-    .hero {
-
-        padding:
-            38px 0 42px;
-    }
-
-
-    .hero-grid {
-        gap: 30px;
-    }
-
-
-    .photo-placeholder {
-
-        width: 125px;
-        height: 125px;
-
-        font-size: 38px;
-    }
-
-
-    .profile-column h1 {
-
-        font-size: 30px;
-
-        letter-spacing: -0.8px;
-    }
-
-
-    .degree {
-        font-size: 14px;
-    }
-
-
-    .about-column h2 {
-
-        font-size: 25px;
-    }
-
-
-    main.container {
-
-        padding-top: 30px;
-    }
-
-
-    .card {
-
-        padding: 25px 21px;
-
-        border-radius: 15px;
-    }
-
-
-    .card h2 {
-
-        font-size: 22px;
-
-        margin-bottom: 22px;
-    }
-
-
-    .publication {
-
-        grid-template-columns:
-            1fr;
-
-        gap: 5px;
-    }
-
-
-    .publication-year {
-
-        margin-bottom: 2px;
-    }
-
-
-    .about-footer {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 12px;
-    }
-
-
-    .contact-card {
-
-        padding: 28px 23px;
-    }
-
-
-    .contact-card h2 {
-        font-size: 24px;
-    }
-
-
-    .contact-links {
-        min-width: 0;
-        width: 100%;
-    }
-
-
-    .footer-content {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 5px;
-    }
 }
