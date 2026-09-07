@@ -1,3 +1,4 @@
+```css
 /* =========================================
    ROOT
 ========================================= */
@@ -286,6 +287,26 @@ ul {
     box-shadow:
         0 8px 20px
         rgba(36, 79, 80, 0.18);
+}
+
+
+/* =========================================
+   ORCID ICON
+========================================= */
+
+.orcid-icon {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+}
+
+
+.orcid-icon.small {
+
+    font-size: 13px;
 }
 
 
@@ -847,6 +868,60 @@ main {
 
 
 /* =========================================
+   LANGUAGES
+========================================= */
+
+.languages-section {
+
+    margin-bottom: 28px;
+}
+
+
+.languages-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.language-item {
+
+    padding-left: 18px;
+
+    border-left:
+        2px solid var(--primary-light);
+}
+
+
+.language-item h3 {
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #000000;
+
+    margin-bottom: 4px;
+}
+
+
+.language-item p {
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: var(--text-soft);
+}
+
+
+/* =========================================
    TEACHING & ACADEMIC SERVICE
 ========================================= */
 
@@ -1321,6 +1396,14 @@ footer {
     }
 
 
+    .languages-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
     .service-grid {
 
         grid-template-columns: 1fr;
@@ -1357,3 +1440,4 @@ footer {
     }
 
 }
+```
